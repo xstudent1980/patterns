@@ -1,0 +1,16 @@
+{
+    "name": "user/patterns",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "Strategy\\": "Strategy/Ducks/src"
+        }
+    },
+    "authors": [
+        {
+            "name": "Ruslan Sharifullin",
+            "email": "xstudent@yandex.ru"
+        }
+    ],
+    "require": {}
+}
