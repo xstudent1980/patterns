@@ -3,7 +3,8 @@
     "type": "project",
     "autoload": {
         "psr-4": {
-            "Strategy\\": "Strategy/Ducks"
+            "Strategy\\": "Strategy/Ducks",
+            "Observer\\": "Observer/News"
         }
     },
     "authors": [

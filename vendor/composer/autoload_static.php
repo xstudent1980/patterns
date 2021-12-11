@@ -11,12 +11,20 @@ class ComposerStaticInit28059dd12833961318cc801114f87199
         array (
             'Strategy\\' => 9,
         ),
+        'O' => 
+        array (
+            'Observer\\' => 9,
+        ),
     );
 
     public static $prefixDirsPsr4 = array (
         'Strategy\\' => 
         array (
             0 => __DIR__ . '/../..' . '/Strategy/Ducks',
+        ),
+        'Observer\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/Observer/News',
         ),
     );
 
