@@ -2,14 +2,14 @@
 
 namespace Strategy;
 
-use Strategy\Fly\NoFly;
+use Strategy\Actions\Fly\NoFly;
 
 class RubberDuck extends BaseDuck
 {
     public function __construct()
     {
+        $this->setFlyBehaviour(new NoFly());
         parent::__construct();
-        $this->flyBehaviour = new NoFly();
     }
 
     public function display(): void

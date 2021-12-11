@@ -1,18 +1,20 @@
 <?php
+define('BASE_DIR', realpath((__DIR__ . '/..')));
 
-use Strategy\ExoticDuck;
-use Strategy\Fly\NoFly;
-use Strategy\Quack\ExoticQuack;
-use Strategy\RubberDuck;
+require_once BASE_DIR . '/vendor/autoload.php';
+
 use Strategy\SimpleDuck;
-use Strategy\UpgradeableDuck;
+use Strategy\ExoticDuck;
 use Strategy\WoodenDuck;
+use Strategy\RubberDuck;
+use Strategy\UpgradeableDuck;
 
-require_once './vendor/autoload.php';
+use Strategy\Actions\Quack\ExoticQuack;
+use Strategy\Actions\Fly\NoFly;
 
 $ducks = [];
-$ducks[] = new ExoticDuck;
 $ducks[] = new SimpleDuck;
+$ducks[] = new ExoticDuck;
 $ducks[] = new WoodenDuck();
 $ducks[] = new RubberDuck();
 $ducks[] = new UpgradeableDuck();

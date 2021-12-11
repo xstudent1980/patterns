@@ -2,14 +2,14 @@
 
 namespace Strategy;
 
-use Strategy\Quack\ExoticQuack;
+use Strategy\Actions\Quack\ExoticQuack;
 
 class ExoticDuck extends BaseDuck
 {
     public function __construct()
     {
+        $this->setQuackBehaviour(new ExoticQuack());
         parent::__construct();
-        $this->quackBehaviour = new ExoticQuack();
     }
 
     public function display(): void

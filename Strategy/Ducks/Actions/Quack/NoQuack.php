@@ -1,6 +1,6 @@
 <?php
 
-namespace Strategy\Quack;
+namespace Strategy\Actions\Quack;
 
 use Strategy\Interfaces\IQuackable;
 

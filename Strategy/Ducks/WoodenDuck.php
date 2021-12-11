@@ -2,16 +2,17 @@
 
 namespace Strategy;
 
-use Strategy\Fly\NoFly;
-use Strategy\Quack\NoQuack;
+use Strategy\Actions\Fly\NoFly;
+use Strategy\Actions\Quack\NoQuack;
 
 class WoodenDuck extends BaseDuck
 {
     public function __construct()
     {
+        $this->setFlyBehaviour(new NoFly());
+        $this->setQuackBehaviour(new NoQuack());
+
         parent::__construct();
-        $this->flyBehaviour = new NoFly();
-        $this->quackBehaviour = new NoQuack();
     }
 
     public function display(): void

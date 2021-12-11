@@ -3,8 +3,9 @@
 namespace Strategy;
 
 use Strategy\Interfaces\{IFlyable, IQuackable};
-use Strategy\Fly\FlyWithWings;
-use Strategy\Quack\Quack;
+
+use Strategy\Actions\Fly\FlyWithWings;
+use Strategy\Actions\Quack\Quack;
 
 abstract class BaseDuck
 {
@@ -13,8 +14,13 @@ abstract class BaseDuck
 
     public function __construct()
     {
-        $this->flyBehaviour = new FlyWithWings();
-        $this->quackBehaviour = new Quack();
+        if (empty($this->flyBehaviour)) {
+            $this->flyBehaviour = new FlyWithWings();
+        }
+
+        if (empty($this->quackBehaviour)) {
+            $this->quackBehaviour = new Quack();
+        }
     }
 
     public function setFlyBehaviour(IFlyable $newFlyBehaviour): void

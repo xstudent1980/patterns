@@ -1,6 +1,6 @@
 <?php
 
-namespace Strategy\Fly;
+namespace Strategy\Actions\Fly;
 
 use Strategy\Interfaces\IFlyable;
 
