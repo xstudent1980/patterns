@@ -4,9 +4,6 @@ namespace Observer;
 
 use Observer\Interfaces\IObserver;
 use Observer\Interfaces\ISubject;
-use Observer\Widgets\LentaObserver;
-use Observer\Widgets\TvObserver;
-use Observer\Widgets\TwitterObserver;
 
 class NewsAggregator implements ISubject
 {
