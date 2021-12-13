@@ -15,6 +15,10 @@ class ComposerStaticInit28059dd12833961318cc801114f87199
         array (
             'Observer\\' => 9,
         ),
+        'D' => 
+        array (
+            'Decorator\\' => 10,
+        ),
     );
 
     public static $prefixDirsPsr4 = array (
@@ -25,6 +29,10 @@ class ComposerStaticInit28059dd12833961318cc801114f87199
         'Observer\\' => 
         array (
             0 => __DIR__ . '/../..' . '/Observer/News',
+        ),
+        'Decorator\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/Decorator/Beverages',
         ),
     );
 

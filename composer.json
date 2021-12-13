@@ -4,7 +4,8 @@
     "autoload": {
         "psr-4": {
             "Strategy\\": "Strategy/Ducks",
-            "Observer\\": "Observer/News"
+            "Observer\\": "Observer/News",
+            "Decorator\\": "Decorator/Beverages"
         }
     },
     "authors": [
