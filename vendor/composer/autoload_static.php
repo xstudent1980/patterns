@@ -15,6 +15,10 @@ class ComposerStaticInit28059dd12833961318cc801114f87199
         array (
             'Observer\\' => 9,
         ),
+        'F' => 
+        array (
+            'Factory\\' => 8,
+        ),
         'D' => 
         array (
             'Decorator\\' => 10,
@@ -29,6 +33,10 @@ class ComposerStaticInit28059dd12833961318cc801114f87199
         'Observer\\' => 
         array (
             0 => __DIR__ . '/../..' . '/Observer/News',
+        ),
+        'Factory\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/Factory/Cars',
         ),
         'Decorator\\' => 
         array (

@@ -5,7 +5,8 @@
         "psr-4": {
             "Strategy\\": "Strategy/Ducks",
             "Observer\\": "Observer/News",
-            "Decorator\\": "Decorator/Beverages"
+            "Decorator\\": "Decorator/Beverages",
+            "Factory\\": "Factory/Cars"
         }
     },
     "authors": [

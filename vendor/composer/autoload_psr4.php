@@ -8,5 +8,6 @@ $baseDir = dirname($vendorDir);
 return array(
     'Strategy\\' => array($baseDir . '/Strategy/Ducks'),
     'Observer\\' => array($baseDir . '/Observer/News'),
+    'Factory\\' => array($baseDir . '/Factory/Cars'),
     'Decorator\\' => array($baseDir . '/Decorator/Beverages'),
 );
